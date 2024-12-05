@@ -151,6 +151,7 @@ class MemoRAGLite:
         self.language = None
 
     def adapt_batch_size(self):
+        batch_size =1 
         free_memory = get_first_gpu_memory()
 
         if free_memory < 23000:
